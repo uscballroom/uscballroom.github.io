@@ -6,7 +6,7 @@ var SiteHeaderBackground = React.createClass({
   },
   // BACKGROUND_DIRECTORY: './images/backgrounds/',
   // Temporary hack to get the images from the old site
-  BACKGROUND_DIRECTORY: 'http://www-scf.usc.edu/~ballroom/images/backgrounds/',
+  BACKGROUND_DIRECTORY: 'https://www-scf.usc.edu/~ballroom/images/backgrounds/',
   getInitialState: function() {
     return {
       renderedImages: [],
