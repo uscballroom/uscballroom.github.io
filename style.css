@@ -1,0 +1,207 @@
+body {
+  background-color: #222222;
+  /*font-family: "Open Sans", "National", "Segoe UI", "Helvetica", "Arial";*/
+  font-family: "Open Sans", sans-serif;
+  /*font-family: "Asap", sans-serif;*/
+  font-size: 14px;
+}
+h1, h2, h3 {
+  font-family: "Vollkorn";
+  color: #FFEC9E;
+}
+h2, h3 {
+  margin-top: 30px;
+}
+h4, h5, h6 {
+  font-weight: 600;
+}
+h4 {
+  font-size: 20px;
+}
+h5 {
+  font-size: 18px;
+}
+h6 {
+  font-size: 16px;
+}
+
+b {
+  font-weight: 600;
+}
+
+a, a:focus {
+  cursor: pointer;
+  color: #FFCC00;
+  text-decoration: underline;
+}
+a:hover {
+  color: #FFCC00;
+  background-color: #990000;
+  text-decoration: underline;
+}
+a:active {
+  color: #FFCC00;
+  background-color: #bb2222;
+}
+
+::-moz-selection {
+  color: #990000;
+  background-color: rgba(255, 204, 0, .8);
+}
+::selection {
+  color: #990000;
+  background-color: rgba(255, 204, 0, .8);
+}
+
+.clearfix {
+  clear: both;
+}
+
+
+
+.SiteHeader {
+  position: relative;
+  overflow: hidden;
+}
+.SiteHeader_small {
+  height: 30vh;
+}
+.SiteHeader_large {
+  height: 80vh;
+}
+.SiteHeader_overlay {
+  color: #FFCC00;
+  background-color: rgba(153, 0, 0, .75);
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+}
+.SiteHeader_overlay a {
+  color: #FFCC00;
+}
+.SiteHeader_shadowBorder {
+  width: 100%;
+  border-bottom: 4px solid rgba(0,0,0,.25);
+  z-index: -1;
+  margin-bottom: -4px;
+}
+.SiteHeader_title {
+  font-family: 'Grand Hotel';
+  font-family: 'Lovers Quarrel';
+  font-family: 'Ruthie';
+  font-family: 'Playball';
+  font-family: 'Qwigley';
+  font-family: 'Parisienne';
+  font-family: 'Allura';
+  font-family: 'Klinic Slab';
+  font-family: 'Abraham Lincoln';
+  font-family: 'Homestead Display';
+  font-family: 'Dancing Script';
+  font-size: 56px;
+}
+
+
+
+.SiteHeaderBackground {
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+.SiteHeaderBackground_carousel {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+.SiteHeaderBackground_carousel > div,
+.SiteHeaderBackground_carousel > div > div {
+  height: 100%;
+}
+.SiteHeaderBackground_image {
+  background-size: cover;
+  background-position: 50% 35%;
+}
+
+
+
+.Navigation_container {
+  border-top: 1px solid #FFCC00;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.Navigation_wrapper {
+  margin: 0 auto;
+}
+.Navigation {
+  padding-left: 0;
+  list-style: none;
+  font-size: 16px;
+  margin: 0;
+  min-height: 34px;
+}
+.Navigation > div {
+  display: inline-block;
+  /*height: 34px;*/
+  /*overflow-y: hidden;*/
+}
+.Navigation_pages {
+  float: left;
+}
+.Navigation_controls {
+  float: right;
+  overflow-y: hidden;
+}
+.Navigation > div > * {
+  display: inline-block;
+  /*display: inline;*/
+  padding: 6px 18px;
+  line-height: 22px;
+  vertical-align: middle;
+}
+.Navigation > div > a {
+  text-decoration: none;
+  font-weight: initial;
+}
+.Navigation > div.Navigation_pages > a {
+  padding-bottom: 2px;
+  border-bottom: 4px solid transparent;
+}
+.Navigation > div.Navigation_pages > a.Navigation_currentPage {
+  border-bottom-color: #FFCC00;
+}
+.Navigation > div.Navigation_controls > * {
+  padding-left: 6px;
+  padding-right: 6px;
+}
+.Navigation > div.Navigation_controls > a > i {
+  line-height: 19px;
+  vertical-align: middle;
+}
+.Navigation > div > a:hover,
+.Navigation > div > a:focus {
+  text-decoration: none;
+}
+.Navigation > div > a:hover {
+  background-color: rgba(255,204,0,.40);
+}
+.Navigation > div > a:active {
+  background-color: rgba(255,204,0,.85);
+}
+
+
+.ContentArea_wrapper {
+  border: 4px solid rgba(0,0,0,.25);
+  margin: 0 -4px;
+  border-top: none;
+  margin-bottom: 15px;
+}
+.ContentArea {
+  color: #FFF5CC;
+  background-color: #302F2C;
+  border-top: 4px solid #FFCC00;
+  padding: 10px 20px;
+  min-height: 80vh;
+}
