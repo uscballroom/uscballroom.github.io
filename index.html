@@ -28,11 +28,6 @@
     <!-- End Facebook Pixel Code -->
   </head>
   <body>
-  {% for image in site.static_files %}
-      {% if image.path contains 'images/backgrounds' %}
-          <img src="{{ site.baseurl }}{{ image.path }}" alt="Background"/>
-      {% endif %}
-  {% endfor %}
     <div id="main">
       <div style="margin: 40px 0; display: block; text-align: center;">
         Loading...

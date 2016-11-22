@@ -1,47 +1,41 @@
 var PageLink = window.REACT_CLASSES.PageLink;
 
 var SiteHeaderBackground = React.createClass({
+  BACKGROUND_DIRECTORY: './images/backgrounds/',
+  FILENAMES: [
+    '1.jpg',
+    '2.jpg',
+    '3.jpg',
+    '4.jpg',
+    '5.jpg',
+    '6.jpg',
+    '7.jpg',
+    '8.jpg',
+    '9.jpg',
+    '10.jpg'
+  ],
+
   propTypes: {
     initializeSlick: React.PropTypes.func.isRequired,
   },
-  BACKGROUND_DIRECTORY: './images/backgrounds/',
   getInitialState: function() {
     return {
       renderedImages: [],
     };
   },
   componentWillMount: function() {
-    // Send request for list of files in BACKGROUND_DIRECTORY
-    $.ajax({
-      url: this.BACKGROUND_DIRECTORY,
-      success: this._handleReceivedImageList,
-    });
-  },
-  _handleReceivedImageList: function(data) {
-    // Get filenames out of the received image list
-    var filenames = [];
-    var BACKGROUND_DIRECTORY = this.BACKGROUND_DIRECTORY;
-    $(data).find('a:contains(.jpg)').each(function(){
-      // Get only the filename itself without subdirectories, e.g. '001.jpg'
-      var filename = $(this).attr('href');
-      filename = filename.substring(filename.lastIndexOf('/') + 1);
-      // Add the image directory path
-      filename = BACKGROUND_DIRECTORY + filename;
-      filenames.push(filename);
-    });
-
     // Shuffle filenames
-    var m = filenames.length, t, i;
+    var m = this.FILENAMES.length, t, i;
     while (m) {
       i = Math.floor(Math.random() * m--);
-      t = filenames[m];
-      filenames[m] = filenames[i];
-      filenames[i] = t;
+      t = this.FILENAMES[m];
+      this.FILENAMES[m] = this.FILENAMES[i];
+      this.FILENAMES[i] = t;
     }
 
     var renderedImages = [];
-    for (var i in filenames) {
-      var filename_i = filenames[i];
+    for (var i in this.FILENAMES) {
+      var filename_i = this.FILENAMES[i];
       renderedImages.push(
         <div
           className="SiteHeaderBackground_image"
