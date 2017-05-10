@@ -1,3 +1,3 @@
 # uscballroom.github.io
 Website for the SC Ballroom Dance Team
-[uscballroom.org](uscballroom.org)
+[uscballroom.org](http://uscballroom.org)
