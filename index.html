@@ -1,4 +1,7 @@
 ---
 layout: default
-permalink: /
 ---
+hello
+{% for leader in site.data.leaders %}
+  <p>{{leader.name}}: {{leader.position}}</p>
+{% endfor %}
