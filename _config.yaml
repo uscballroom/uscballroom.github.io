@@ -1,7 +1,6 @@
 defaults:
   -
     scope:
-      path: "_pages"
       type: "pages"
     values:
       layout: "default"
@@ -10,3 +9,7 @@ collections:
   pages:
     permalink: /:path/
     output: true
+
+exclude:
+  - README.md
+  - .gitignore

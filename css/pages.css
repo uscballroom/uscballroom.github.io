@@ -19,7 +19,7 @@
 }
 .Home_gsImage {
   display: block;
-  height: 300px;
+  height: 200px;
   background-size: contain;
   background-repeat: no-repeat;
   background-position: 50% 50%;
@@ -34,7 +34,7 @@
   text-align: center;
   margin: 0 auto;
   padding: 12px 15px;
-  max-width: 450px;
+  max-width: 500px;
 }
 .Home_sectionContainer {
   /*put background color here*/

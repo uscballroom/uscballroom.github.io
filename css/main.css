@@ -1,26 +1,25 @@
+/* PUT @font-face DECLARATIONS IN THE TOP OF _layout/header.html */
+
 body {
   /*background-color: #222222;*/
-  background-color: #371212;
+  /*background-color: #371212;*/
   background-color: #731700;
-  background-color: #770000;
-  background-color: #4A0A18;
-  background-color: #471F1F;
-  background-color: #691414;
-  background-color: #990000;
-  background-color: #8a1313;
+  /*background-color: #770000;*/
+  /*background-color: #4A0A18;*/
+  /*background-color: #471F1F;*/
+  /*background-color: #691414;*/
+  /*background-color: #990000;*/
+  /*background-color: #8a1313;*/
   /*font-family: "Open Sans", "National", "Segoe UI", "Helvetica", "Arial";*/
-  font-family: "Avenir", "Segoe UI", "Helvetica Nueue", sans-serif;
   /*font-family: "Asap", sans-serif;*/
+  font-family: "Avenir", "Segoe UI", "Helvetica Nueue", sans-serif;
   font-size: 14px;
 }
 h1, h2, h3 {
-  font-family: 'Abraham Lincoln';
-  font-family: 'Homestead Display';
-  font-family: 'Vollkorn';
   font-family: 'Klinic Slab';
-  color: #FFEC9E;
   /*color: #FFCC00;*/
-  color: #FFF5B8;
+  /*color: #FFF5B8;*/
+  color: #FFEC9E;
 }
 h2, h3 {
   margin-top: 30px;
@@ -43,17 +42,20 @@ b {
 }
 
 a, a:focus, a:visited {
-  font-weight: bold;
+  /*font-weight: bold;*/
   cursor: pointer;
   color: #FFCC00;
+  text-decoration: underline;
 }
 a:hover {
   color: #FFCC00;
   text-decoration: underline;
+  background-color: rgba(255,204,0,0.50);
 }
 a:active {
   color: #FFCC00;
   text-decoration: underline;
+  background-color: rgba(255,204,0,0.20);
 }
 
 ::-moz-selection {

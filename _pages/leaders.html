@@ -1,0 +1,6 @@
+---
+title: Leaders
+---
+{% for leader in site.data.information.leaders.board %}
+  <p>{{leader.name}}: {{leader.position}}</p>
+{% endfor %}

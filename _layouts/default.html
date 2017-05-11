@@ -3,36 +3,69 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <!-- Third-party -->
+  <!-- Third-party CSS below -->
   <link rel="stylesheet" href="{{site.github.url}}/thirdparty/bootstrap.min.css"/>
   <link rel="stylesheet" href="{{site.github.url}}/thirdparty/slick/slick.css"/>
   <link rel="stylesheet" href="{{site.github.url}}/thirdparty/slick/slick-theme.css"/>
-  <!-- End Third-party -->
+  <!-- Third-party CSS above -->
 
-  <!-- CSS we wrote -->
+  <!-- CSS written by us below -->
   <link rel="stylesheet" href="{{site.github.url}}/css/main.css"/>
   <link rel="stylesheet" href="{{site.github.url}}/css/pages.css"/>
-  <!-- End CSS we wrote -->
+  <!-- To import fonts, place them in the "fonts" folder and do it in the same way as the ones below. -->
+  <style>
+    @font-face {
+      font-family: 'Dancing Script';
+      src: url('{{site.github.url}}/fonts/DancingScript.ttf');
+    }
+    @font-face {
+      font-family: 'Klinic Slab';
+      src: url('{{site.github.url}}/fonts/KlinicSlabBook.otf');
+    }
+    @font-face {
+      font-family: 'Material Icons';
+      font-style: normal;
+      font-weight: 400;
+      src: url('{{site.github.url}}/fonts/MaterialIcons-Regular.ttf');
+    }
+    .material-icons {
+      font-family: 'Material Icons';
+      font-weight: normal;
+      font-style: normal;
+      font-size: 24px;
+      line-height: 1;
+      letter-spacing: normal;
+      text-transform: none;
+      display: inline-block;
+      white-space: nowrap;
+      word-wrap: normal;
+      direction: ltr;
+      -webkit-font-feature-settings: 'liga';
+      -webkit-font-smoothing: antialiased;
+    }
+  </style>
+  <!-- CSS written by us above -->
 
-  <!-- Facebook Pixel Code (for visitor counting) -->
+  <!-- Facebook Pixel Code below (for visitor counting) -->
   <script>
   !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
   n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
   n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
   t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
   document,'script','https://connect.facebook.net/en_US/fbevents.js');
-
   fbq('init', '1611077499204557');
   fbq('track', "PageView");
   </script>
   <noscript><img height="1" width="1" style="display:none"
   src="https://www.facebook.com/tr?id=1611077499204557&ev=PageView&noscript=1"
   /></noscript>
-  <!-- End Facebook Pixel Code -->
+  <!-- Facebook Pixel Code above -->
 </head>
 <body>
+
+  <!-- Visible website below -->
   <div class="Site">
-    <div>header</div>
+    {%include header.html%}
 
     <div class="ContentArea_wrapper">
       <div class="ContentArea">
@@ -40,9 +73,14 @@
       </div>
     </div>
   </div>
-  <!-- Third-party -->
+  <!-- Visible website above -->
+
+  <!-- Third-party scripts below -->
   <script src="{{site.github.url}}/thirdparty/jquery-3.2.1.min.js"></script>
   <script src="{{site.github.url}}/thirdparty/slick/slick.min.js"></script>
-  <!-- End Third-party -->
+  <!-- Third-party scripts above -->
+
+  <!-- Place scripts we write below, if we have them -->
+  <!-- Place scripts we write above, if we have them -->
 </body>
 </html>

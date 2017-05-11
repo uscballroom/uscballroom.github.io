@@ -1,0 +1,23 @@
+page_order:
+  - home
+  - join
+  - schedule
+  - faq
+  - classes
+  - leaders
+  - contact
+
+# Put leaders' picture files in the "images/leaders" folder
+leaders:
+  board:
+    - name: Erin Soares
+      position: President
+      file: erin.jpg
+    - name: Katy Maina
+      position: Treasurer
+      file: katy.jpg
+  coaches:
+    - name: Lorena Bravo
+      position: Ballroom & Smooth Coach
+    - name: Jonathan Atkinson
+      position: Latin & Rhythm Coach
