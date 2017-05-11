@@ -1,0 +1,151 @@
+.Home {
+  margin-top: -10px;
+}
+.Home_topTextContainer {
+  /*put background color here*/
+  padding: 20px 0;
+}
+.Home_topText {
+  max-width: 700px;
+  text-align: center;
+  margin: 0 auto;
+}
+.Home_topText p {
+  margin: 0;
+}
+.Home_gsContainer {
+  background-color: #121337;
+  padding-bottom: 10px;
+}
+.Home_gsImage {
+  display: block;
+  height: 300px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  /*border-top: 1px solid #FFCC00;*/
+  /*border-bottom: 1px solid #FFCC00;*/
+}
+.Home_gsImage:hover,
+.Home_gsImage:active {
+  background-color: #121337;
+}
+.Home_gsAnnouncement {
+  text-align: center;
+  margin: 0 auto;
+  padding: 12px 15px;
+  max-width: 450px;
+}
+.Home_sectionContainer {
+  /*put background color here*/
+  padding: 40px 0 20px;
+}
+.Home_section {
+  margin: 0 auto 20px;
+  max-width: 680px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+.Home_section>h3 {
+  margin: 0;
+  flex: 0 0 130px;
+}
+.Home_section ul {
+  margin: 0;
+  padding-left: 16px;
+}
+.Home_section>div {
+  margin-left: 20px;
+  flex: 1;
+}
+.Home_classesContainer {
+  background-color: black;
+  padding: 1px 0 20px;
+}
+.Home_classesHeading {
+  text-align: center;
+}
+.Home_classes {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 16px;
+}
+.Home_classes>div {
+  text-align: center;
+  width: 40%;
+  margin: 20px 0;
+}
+.Home_classes h6 {
+  font-size: 0.7em;
+  letter-spacing: 2px;
+}
+.Home_classes h5 {
+  font-size: 1.2em;
+}
+.Home_classes p {
+  /*font-size: 1.2em;*/
+  margin: 0;
+}
+.Home_classesMoreInfo {
+  text-align: center;
+}
+@media (max-width: 570px) {
+  .Home_section {
+    flex-direction: column;
+  }
+  .Home_section>h3 {
+    flex: unset;
+    margin-bottom: 4px;
+  }
+  .Home_classes {
+    flex-direction: column;
+  }
+  .Home_classes>div {
+    width: 100%;
+  }
+}
+
+
+
+.LeadersPage_person {
+  margin: 20px 0;
+}
+.LeadersPage_personImage {
+  float: left;
+  width: 150px;
+  height: 150px;
+  margin-right: 10px;
+  background-size: cover;
+  /*border: 4px solid #181818;*/
+}
+.LeadersPage_personText h3 {
+  margin-top: 0;
+}
+.LeadersPage_coachesTitle {
+  margin-top: 40px;
+}
+
+
+
+ul.SchedulePage_weeklyList li {
+  margin-top: 5px;
+}
+ul.SchedulePage_weeklyList > li {
+  margin-top: 20px;
+}
+ul.SchedulePage_weeklyList {
+  margin-bottom: 20px;
+}
+.SchedulePage_map {
+  width: 100%;
+  max-width: 500px;
+}
+
+
+
+.ContactPage {
+  padding-top: 40px;
+  text-align: center;
+}

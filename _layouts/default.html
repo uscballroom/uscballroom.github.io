@@ -3,8 +3,46 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
+  <!-- Third-party -->
+  <link rel="stylesheet" href="{{site.github.url}}/thirdparty/bootstrap.min.css"/>
+  <link rel="stylesheet" href="{{site.github.url}}/thirdparty/slick/slick.css"/>
+  <link rel="stylesheet" href="{{site.github.url}}/thirdparty/slick/slick-theme.css"/>
+  <!-- End Third-party -->
+
+  <!-- CSS we wrote -->
+  <link rel="stylesheet" href="{{site.github.url}}/css/main.css"/>
+  <link rel="stylesheet" href="{{site.github.url}}/css/pages.css"/>
+  <!-- End CSS we wrote -->
+
+  <!-- Facebook Pixel Code (for visitor counting) -->
+  <script>
+  !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+  n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+  document,'script','https://connect.facebook.net/en_US/fbevents.js');
+
+  fbq('init', '1611077499204557');
+  fbq('track', "PageView");
+  </script>
+  <noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=1611077499204557&ev=PageView&noscript=1"
+  /></noscript>
+  <!-- End Facebook Pixel Code -->
 </head>
 <body>
-  {{content}}
+  <div class="Site">
+    <div>header</div>
+
+    <div class="ContentArea_wrapper">
+      <div class="ContentArea">
+        {{content}}
+      </div>
+    </div>
+  </div>
+  <!-- Third-party -->
+  <script src="{{site.github.url}}/thirdparty/jquery-3.2.1.min.js"></script>
+  <script src="{{site.github.url}}/thirdparty/slick/slick.min.js"></script>
+  <!-- End Third-party -->
 </body>
 </html>

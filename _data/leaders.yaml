@@ -1,4 +1,10 @@
-- name: Erin Soares
-  position: President
-- name: Katy Maina
-  position: Treasurer
+board:
+  - name: Erin Soares
+    position: President
+  - name: Katy Maina
+    position: Treasurer
+coaches:
+  - name: Lorena Bravo
+    position: Ballroom & Smooth Coach
+  - name: Jonathan Atkinson
+    position: Latin & Rhythm Coach

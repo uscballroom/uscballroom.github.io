@@ -1,0 +1,12 @@
+defaults:
+  -
+    scope:
+      path: "_pages"
+      type: "pages"
+    values:
+      layout: "default"
+
+collections:
+  pages:
+    permalink: /:path.html
+    output: true
