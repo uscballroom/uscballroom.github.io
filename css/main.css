@@ -62,10 +62,12 @@ a:active {
 }
 
 ::-moz-selection {
-  background-color: rgba(255, 204, 0, .3);
+  background-color: rgba(255,204,0,.3);
+  background-color: rgba(255,236,158,.3);
 }
 ::selection {
-  background-color: rgba(255, 204, 0, .3);
+  background-color: rgba(255,204,0,.3);
+  background-color: rgba(255,236,158,.3);
 }
 
 .clearfix {
@@ -94,16 +96,19 @@ a:active {
   height: 80vh;
 }
 .SiteHeader_overlay {
-  color: #FFCC00;
-  background-color: rgba(153, 0, 0, .75);
-  background-color: rgba(138, 19, 19, .75);
+  /*color: #FFCC00;*/
+  color: #FFEC9E;
+  background-color: rgba(153,0,0,.75);
+  background-color: rgba(138,19,19,.75);
+  background-color: rgba(128,0,0,.75);
   width: 100%;
   position: absolute;
   bottom: 0;
   transition: position 500ms;
 }
 .SiteHeader_overlay a {
-  color: #FFCC00;
+  /*color: #FFCC00;*/
+  color: #FFEC9E;
 }
 .SiteHeader_title {
 /*
@@ -152,7 +157,7 @@ a:active {
 
 
 .Navigation_container {
-  border-top: 1px solid #FFCC00;
+  border-top: 1px solid #FFEC9E;
   -webkit-touch-callout: none;
   -webkit-user-select: none;
   -khtml-user-select: none;
@@ -198,6 +203,7 @@ a:active {
 }
 .Navigation > div.Navigation_pages > a.Navigation_currentPage {
   border-bottom-color: #FFCC00;
+  border-bottom-color: #FFEC9E;
 }
 .Navigation > div.Navigation_controls > * {
   padding-left: 6px;
@@ -213,14 +219,17 @@ a:active {
 }
 .Navigation > div > a:hover {
   background-color: rgba(255,204,0,0.60);
+  background-color: rgba(255,236,158,0.60);
 }
 .Navigation > div > a:active {
   background-color: rgba(255,204,0,0.20);
+  background-color: rgba(255,236,158,0.20);
 }
 
 
 .ContentArea_wrapper {
   border-top: 4px solid #FFCC00;
+  border-top: 4px solid #FFEC9E;
 }
 .ContentArea {
   color: #FFF5CC;
@@ -247,6 +256,7 @@ a:active {
   .Navigation > div.Navigation_pages > a.Navigation_currentPage {
     border-bottom-color: transparent;
     background-color: rgba(255,204,0,0.40);
+    background-color: rgba(255,236,158,0.40);
   }
 
   .SiteHeader_title {
