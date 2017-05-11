@@ -1,6 +1,9 @@
 <div>
   <div class="SiteHeader {% if page.large_header %}SiteHeader_large{% endif %}">
-    <SiteHeaderBackground initializeSlick={this._initializeSlick}/>
+    <div class="SiteHeaderBackground">
+      <div id="slick_carousel" class="SiteHeaderBackground_carousel">
+      </div>
+    </div>
     <div class="SiteHeader_overlay">
       <div class="my_container">
         <div class="SiteHeader_title">
@@ -16,9 +19,7 @@
               images:
               <a id="Navigation_controls_prev"><i class="material-icons">skip_previous</i></a>
               <a id="Navigation_controls_pause" onClick={this.props.onPlayPause}>
-                <i class="material-icons">
-                  {this.props.autoplay ? 'pause' : 'play_arrow'}
-                </i>
+                <i id="Navigation_controls_pause_icon" class="material-icons">pause</i>
               </a>
               <a id="Navigation_controls_next"><i class="material-icons">skip_next</i></a>
             </div>

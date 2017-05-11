@@ -185,6 +185,8 @@ a:active {
 .Navigation_controls {
   float: right;
   overflow-y: hidden;
+  color: rgba(255,204,0,0.80);
+  color: rgba(255,236,158,0.80);
 }
 .Navigation > div > * {
   display: inline-block;
@@ -212,6 +214,8 @@ a:active {
 .Navigation > div.Navigation_controls > a > i {
   line-height: 19px;
   vertical-align: middle;
+  color: rgba(255,204,0,0.80);
+  color: rgba(255,236,158,0.80);
 }
 .Navigation > div > a:hover,
 .Navigation > div > a:focus {

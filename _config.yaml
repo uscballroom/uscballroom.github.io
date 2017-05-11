@@ -4,6 +4,11 @@ defaults:
       type: "pages"
     values:
       layout: "default"
+  -
+    scope:
+      path: "images/backgrounds"
+    values:
+      background: true
 
 collections:
   pages:

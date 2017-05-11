@@ -48,17 +48,17 @@
 
   <!-- Facebook Pixel Code below (for visitor counting) -->
   <script>
-  !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-  n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
-  n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
-  t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
-  document,'script','https://connect.facebook.net/en_US/fbevents.js');
-  fbq('init', '1611077499204557');
-  fbq('track', "PageView");
+    !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+    n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+    document,'script','https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '1611077499204557');
+    fbq('track', "PageView");
   </script>
   <noscript><img height="1" width="1" style="display:none"
-  src="https://www.facebook.com/tr?id=1611077499204557&ev=PageView&noscript=1"
-  /></noscript>
+    src="https://www.facebook.com/tr?id=1611077499204557&ev=PageView&noscript=1"
+    /></noscript>
   <!-- Facebook Pixel Code above -->
 </head>
 <body>
@@ -80,7 +80,69 @@
   <script src="{{site.github.url}}/thirdparty/slick/slick.min.js"></script>
   <!-- Third-party scripts above -->
 
-  <!-- Place scripts we write below, if we have them -->
-  <!-- Place scripts we write above, if we have them -->
+  <!-- Scripts we write below -->
+  <script>
+    // This script sets up the background slideshow.
+    var slickCarousel = $('#slick_carousel');
+    if (slickCarousel) {
+      // Get filenames from Jekyll
+      var backgroundFilenames = [
+      {% assign backgrounds = site.static_files | where: "background", true %}
+      {% for background in backgrounds %}
+        '{{site.github.url}}{{background.path}}',
+      {% endfor %}
+      ];
+
+      // Shuffle filenames
+      var m = backgroundFilenames.length, t, i;
+      while (m) {
+        i = Math.floor(Math.random() * m--);
+        t = backgroundFilenames[m];
+        backgroundFilenames[m] = backgroundFilenames[i];
+        backgroundFilenames[i] = t;
+      }
+
+      // Put all the backgrounds into the website
+      var backgroundHtml = '';
+      for (var i = 0; i < backgroundFilenames.length; i++) {
+        backgroundHtml += '<div class="SiteHeaderBackground_image" style="background-image: url(\'';
+        backgroundHtml += backgroundFilenames[i];
+        backgroundHtml += '\')"></div>';
+      }
+      slickCarousel.html(backgroundHtml);
+
+      // Initialize Slick carousel
+      slickCarousel.slick({
+        autoplay: true,
+        autoplaySpeed: 4000,
+        pauseOnHover: false,
+        fade: true,
+        speed: 700,
+        lazyLoad: 'ondemand',
+        draggable: false,
+        nextArrow: '#Navigation_controls_next',
+        prevArrow: '#Navigation_controls_prev',
+      });
+
+      // Handle pause button click
+      var pauseButton = $('#Navigation_controls_pause');
+      if (pauseButton) {
+        pauseButton.click(function() {
+          var pauseIcon = $('#Navigation_controls_pause_icon')
+          if (slickCarousel.slick('slickGetOption', 'autoplay')) {
+            // Currently playing, need to pause
+            slickCarousel.slick('slickSetOption', 'autoplay', false).slick('slickPause');
+            pauseIcon.html('play_arrow');
+          } else {
+            // Currently paused, need to play
+            slickCarousel.slick('slickSetOption', 'autoplay', true).slick('slickPlay');
+            pauseIcon.html('pause');
+          }
+        });
+      }
+    }
+  </script>
+  <!-- Scripts we write above -->
+
 </body>
 </html>
