@@ -8,5 +8,5 @@ defaults:
 
 collections:
   pages:
-    permalink: /:path.html
+    permalink: /:path/
     output: true
