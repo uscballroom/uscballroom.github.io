@@ -133,10 +133,12 @@
             // Currently playing, need to pause
             slickCarousel.slick('slickSetOption', 'autoplay', false).slick('slickPause');
             pauseIcon.html('play_arrow');
+            // pauseIcon.html('&#xE037;');
           } else {
             // Currently paused, need to play
             slickCarousel.slick('slickSetOption', 'autoplay', true).slick('slickPlay');
             pauseIcon.html('pause');
+            // pauseIcon.html('&#xE034;');
           }
         });
       }
