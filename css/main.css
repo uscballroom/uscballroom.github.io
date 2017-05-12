@@ -1,27 +1,12 @@
 /* PUT @font-face DECLARATIONS IN THE TOP OF _layout/header.html */
 
 body {
-  /*background-color: #222222;*/
-  /*background-color: #371212;*/
-  /*background-color: #770000;*/
-  /*background-color: #4A0A18;*/
-  /*background-color: #471F1F;*/
-  /*background-color: #691414;*/
-  /*background-color: #990000;*/
-
-  /*background-color: #8a1313;*/
-  background-color: #731700;
   background-color: #800000;
-
-  /*font-family: "Open Sans", "National", "Segoe UI", "Helvetica", "Arial";*/
-  /*font-family: "Asap", sans-serif;*/
-  font-family: "Avenir", "Segoe UI", "Helvetica Nueue", sans-serif;
+  font-family: "Avenir", "Lato", "Segoe UI", "Helvetica Nueue", sans-serif;
   font-size: 14px;
 }
 h1, h2, h3 {
   font-family: 'Klinic Slab';
-  /*color: #FFCC00;*/
-  /*color: #FFF5B8;*/
   color: #FFEC9E;
 }
 h2, h3 {
@@ -45,7 +30,6 @@ b {
 }
 
 a, a:focus, a:visited {
-  /*font-weight: bold;*/
   cursor: pointer;
   color: #FFCC00;
   text-decoration: underline;
@@ -62,11 +46,9 @@ a:active {
 }
 
 ::-moz-selection {
-  background-color: rgba(255,204,0,.3);
   background-color: rgba(255,236,158,.3);
 }
 ::selection {
-  background-color: rgba(255,204,0,.3);
   background-color: rgba(255,236,158,.3);
 }
 
@@ -96,7 +78,6 @@ a:active {
   height: 80vh;
 }
 .SiteHeader_overlay {
-  /*color: #FFCC00;*/
   color: #FFEC9E;
   background-color: rgba(153,0,0,.75);
   background-color: rgba(138,19,19,.75);
@@ -107,22 +88,9 @@ a:active {
   transition: position 500ms;
 }
 .SiteHeader_overlay a {
-  /*color: #FFCC00;*/
   color: #FFEC9E;
 }
 .SiteHeader_title {
-/*
-  font-family: 'Grand Hotel';
-  font-family: 'Lovers Quarrel';
-  font-family: 'Ruthie';
-  font-family: 'Playball';
-  font-family: 'Qwigley';
-  font-family: 'Parisienne';
-  font-family: 'Allura';
-  font-family: 'Klinic Slab';
-  font-family: 'Abraham Lincoln';
-  font-family: 'Homestead Display';
-*/
   font-family: 'Dancing Script';
   font-size: 56px;
   text-align: center;
@@ -180,15 +148,12 @@ a:active {
 }
 .Navigation > div {
   display: inline-block;
-  /*height: 34px;*/
-  /*overflow-y: hidden;*/
 }
 .Navigation_pages {
 }
 .Navigation_controls {
   float: right;
   overflow-y: hidden;
-  color: rgba(255,204,0,0.70);
   color: rgba(255,236,158,0.70);
 }
 .Navigation > div > * {
@@ -201,18 +166,7 @@ a:active {
   text-decoration: none;
   font-weight: initial;
 }
-/*.Navigation > div.Navigation_pages > a {
-  padding-bottom: 2px;
-  border-bottom: 4px solid transparent;
-}
 .Navigation > div.Navigation_pages > a.Navigation_currentPage {
-  border-bottom-color: #FFCC00;
-  border-bottom-color: #FFEC9E;
-}
-*/
-.Navigation > div.Navigation_pages > a.Navigation_currentPage {
-  /*border-bottom-color: transparent;*/
-  background-color: rgba(255,204,0,0.40);
   background-color: rgba(255,236,158,0.40);
 }
 .Navigation > div.Navigation_controls > * {
@@ -222,25 +176,20 @@ a:active {
 .Navigation > div.Navigation_controls > a > i {
   line-height: 18px;
   vertical-align: middle;
-  /*color: rgba(255,204,0,0.80);*/
-  /*color: rgba(255,236,158,0.80);*/
 }
 .Navigation > div > a:hover,
 .Navigation > div > a:focus {
   text-decoration: none;
 }
 .Navigation > div > a:hover {
-  background-color: rgba(255,204,0,0.60);
   background-color: rgba(255,236,158,0.60);
 }
 .Navigation > div > a:active {
-  background-color: rgba(255,204,0,0.20);
   background-color: rgba(255,236,158,0.20);
 }
 
 
 .ContentArea_wrapper {
-  border-top: 4px solid #FFCC00;
   border-top: 4px solid #FFEC9E;
 }
 .ContentArea {
