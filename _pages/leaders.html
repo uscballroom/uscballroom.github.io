@@ -1,6 +1,91 @@
 ---
 title: Leaders
+
+# Put leaders' picture files in the "images/leaders" folder.
+
+# The HTML and styling in the file "_includes/leader.html" gets included
+#   once for each leader.  You should only edit that file if
+#   you're changing the style or appearance.  To change the list of leaders,
+#   you only have to edit the following section of this file.
+
+# To add people, copy & paste a block of lines that looks like this (without the hashtags):
+#   - name: Wally Waltz
+#     position: Treasurer
+#     image_file: wally.jpg
+#     description: <p>Wally joined the team in fall 2016. He is a dance major and he keeps the team running by taking care of the money.</p>
+# And make sure you paste it under either "board:" or "coaches:" appropriately.
+
+# Note that for "description:", you can put either plain text or HTML.
+
+leaders:
+  board:
+    - name: Reed Blaylock
+      title: President
+      image_file: reed.jpg
+      description: <p>Reed is a Ph.D. student in linguistics. He runs the whole team and often gives dancing guidance to newer members.</p>
+    - name: Katy Maina
+      title: Treasurer
+      image_file: katy.jpg
+      description: <p>Katy is a neuroscience major and she joined the Ballroom Dance team in spring 2016. She is the team's treasurer and she is the head of planning our own competition, the USC Glamour Smackdown.</p>
+    - name: Mark Gauderman
+      title: Secretary and Publicity Manager
+      image_file: mark.jpg
+      description: <p>Mark is a computer-science-games major and joined the team in fall 2015. He's in charge of recruiting new members and sending the important weekly newsletter.</p>
+    - name: Erin Soares
+      title: Competition Coordinator
+      image_file: erin.jpg
+      description: <p>Erin is a theatre major with a minor in dance, and she joined the USC Ballroom Dance Team in the fall of 2014. She organizes our team's attendance at competitions and helps our members find dance partners to compete with.</p>
+    - name: Austin Carter
+      title: Competition Coordinator
+      image_file: austin.jpg
+      description: <p>Austin is an aeronautical engineering major, and joined the team in spring 2016. He also organizes our team's attendance at competitions.</p>
+    - name: Eric Gauderman
+      title: Social Chair and Webmaster
+      image_file: eric.jpg
+      description: <p>Eric is a computer science major and he joined the Ballroom Dance Team in fall 2014. He organizes social dancing outings for the team and maintains the team website.</p>
+    - name: Zoe Schack
+      title: Social Co-Chair and Volunteering Coordinator
+      image_file: zoe.jpg
+      description: <p>Zoe is a mechanical engineering major and she joined the team in fall 2015. She organizes social outings as well as team's participation in volunteering events.</p>
+    - name: Jeff Tanedo
+      title: Photographer/Videographer
+      image_file: jeff.jpg
+      description: <p>Jeff is a Ph.D student in Biomedical Engineering. He's been with the team since the Fall 2012 and he is in charge of taking photos and videos of our team at competitions and elsewhere.</p>
+    - name: Sanika Bhargaw
+      title: Fundraising Co-Chair
+      image_file: sanika.jpg
+      description: <p>Sanika is majoring in Broadcast Journalism. She joined the Ballroom Dance Team in spring 2015 and she works on raising funds to help send our team to competitions and do all the other things we do.</p>
+    - name: Sarah Berry
+      title: Fundraising Co-Chair
+      image_file: sarah.jpg
+      description: <p>Sarah is majoring in Narrative Studies and she joined the Ballroom Dance Team in fall 2015. She also works on raising funds to help send our team to competitions and do all the other things we do.</p>
+    - name: Max Pflueger
+      title: CDA Liaison
+      image_file: max.jpg
+      description: <p>Max is a Ph.D. computer science major, and he works with the Collegiate Dancesport Association to discuss competition guidlines and coordinate with other schools.</p>
+  coaches:
+    - name: Lorena Bravo
+      position: Ballroom & Smooth Coach
+      image_file: lorena.jpg
+      description: <p>Lorena is our Smooth coach.  She got her start in the USC Ballroom Dance Team, and now she competes nationally and has many years of professional dance experience.  See her website <a href="http://www.bravodancing.com/" target="_blank">here</a>.</p>
+    - name: Jonathan Atkinson
+      position: Latin & Rhythm Coach
+      image_file: jonathan.jpg
+      description: <p>Jonathan is our Rhythm coach.  He also competes nationally and has many years of experience in professional dancing and dance instruction.  See his website <a href="http://ballroomdancers.com/" target="_blank">here</a>.</p>
+
 ---
-{% for leader in site.data.information.leaders.board %}
-  <p>{{leader.name}}: {{leader.position}}</p>
-{% endfor %}
+
+<div class="my_container">
+  <div class="LeadersPage">
+    <h1>Leaders</h1>
+    <p>Meet the team's coaches and executive board!</p>
+    <h2>Executive Board</h2>
+    {% for b in page.leaders.board %}
+      {% include leader.html person=b %}
+    {% endfor %}
+    <h2 class="LeadersPage_coachesTitle">Coaches</h2>
+    {% for c in page.leaders.coaches %}
+      {% include leader.html person=c %}
+    {% endfor %}
+  </div>
+</div>
