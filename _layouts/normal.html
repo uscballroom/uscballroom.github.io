@@ -81,13 +81,13 @@
         </div>
       </div>
       <div class="SiteHeader_overlay">
-        <div class="my_container">
+        <div class="page_container">
           <div class="SiteHeader_title">
             <span>SC Ballroom and Latin Dance&nbsp;Team</span>
           </div>
         </div>
         <div class="Navigation_container">
-          <div class="my_container">
+          <div class="page_container">
             <div class="Navigation">
               <!-- Don't touch the following line; instead edit _data/page_order.yaml -->
               <div class="Navigation_pages">{% for page_id in site.data.page_order %}{% assign page_url = page_id | prepend:"/" | append:"/" %}{% assign p = site.pages | where:"url", page_url | first %}<a class="{% if p.url == page.url %}Navigation_currentPage{% endif %}" href="{{p.url}}">{{p.title}}</a>{% cycle '', '', '', '</div><div class="Navigation_pages">' %}{% endfor %}</div>
