@@ -1,3 +1,4 @@
-# uscballroom.github.io
-Website for the SC Ballroom Dance Team
-[uscballroom.org](http://uscballroom.org)
+# SC Ballroom Dance Team Website
+[uscballroom.org](www.uscballroom.org)
+
+## How to edit the site
