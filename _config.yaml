@@ -22,7 +22,7 @@ defaults:
       background: true
 
 # The following lines tell the system that the public URL of each page should be
-#   the same as the filename within the "_pages" folder
+#   the same as the filename within the "_pages" folder, without the ".html"
 collections:
   pages:
     permalink: /:path/
