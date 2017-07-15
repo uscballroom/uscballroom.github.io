@@ -25,25 +25,25 @@ See **View past versions of the repository** at the bottom for more about the Gi
 1. Navigate to the page you want to edit.  All the pages appear in the [`_pages`](_pages) folder; click on one to view it.  Most of the time, you will not need to edit any HTML outside the `_pages` folder.
 1. Click the pencil icon at the top-right to edit the file.
 1. Make your edits. *Note: unfortunately, the **Preview changes** button on the edit page won't work for our HTML files.*
-  - The HTML code you write is normal HTML, with just one caveat.  If you ever need to specify a URL of something within this website (most commonly, for links to other pages in the site), you must precede the URL with `{{site.github.url}}`.  For example, using an imaginary "Dance Attire" page:
-    ```
-    THE NORMAL WAY: DON'T DO THIS
-    <a href="/dance-attire">Learn about official competition attire</a>
+    - The HTML code you write is normal HTML, with just one caveat.  If you ever need to specify a URL of something within this website (most commonly, for links to other pages in the site), you must precede the URL with `{{site.github.url}}`.  For example:
+      ```
+      THE NORMAL WAY: DON'T DO THIS
+      <a href="/what-we-do">More about what we do</a>
 
-    OUR WAY: YOU NEED TO DO THIS
-    <a href="{{site.github.url}}/dance-attire">Learn about official competition attire</a>
-    ```
-    This is also true for other URLs that appear, such as image sources:
-    ```
-    <img class="SchedulePage_map" src="{{site.github.url}}/images/map_to_ped.png"/>
-    ```
-    Note that you definitely cannot do this for links that go out of the site.  However, I recommend that links that go out of the site should have `target="_blank"` on them, which makes them open in a new tab.  For example, this is on the Contact Us page:
-    ```
-    Find us on <a href="https://www.facebook.com/USCBallroom/" target="_blank">Facebook</a> for updates
-    ```
-    You can look at the Join, Schedule, and Contact Us pages to see these examples in action.
-  - If you encounter any blocks that look like `{{ ... }}` or `{% ... %}`, be very careful around them and generally don't edit anything between the brackets.  These blocks are for smartly generating content like lists of things.
-  - To edit the people on the Leaders page, follow the instructions at the top of the [`_pages/leaders.html`](_pages/leaders.html) file.  Upload the photo of each leader to the [`images/leaders`](images/leaders) folder.  Note that you have to crop it to the square shape that will appear on the Leaders page.
+      OUR WAY: YOU NEED TO DO THIS
+      <a href="{{site.github.url}}/what-we-do">More about what we do</a>
+      ```
+      This is also needed for other URLs in the site, such as image sources:
+      ```
+      <img class="schedule-map" src="{{site.github.url}}/images/map_to_ped.png"/>
+      ```
+      Note that you cannot do this for links that go out of the site.  However, I recommend that links that go out of the site should have `target="_blank"` on them, which makes them open in a new tab.  For example, this is on the Contact Us page:
+      ```
+      Find us on <a href="https://www.facebook.com/USCBallroom/" target="_blank">Facebook</a> for updates
+      ```
+      You can look at the Join, Schedule, and Contact Us pages to see these examples in action.
+    - If you encounter any blocks that look like `{{ ... }}` or `{% ... %}`, be very careful around them and generally don't edit anything between the brackets.  These blocks are for smartly generating content like the header backgrounds, navigation links, and the Leaders list.
+    - To edit the people on the Leaders page, follow the instructions at the top of the [`_pages/leaders.html`](_pages/leaders.html) file.  Upload the photo of each leader to the [`images/leaders`](images/leaders) folder.  Note that you have to crop it to the square shape that will appear on the Leaders page.
 1. If you want, you can type a summary of your changes in the box right under the heading "Commit changes". This is useful for viewing the editing history of the site, but you don't have to do it.
 1. To save the changes, click the button at the bottom that says **Commit changes**.
 1. Wait up to 10 minutes or so for the public website to update.
@@ -54,8 +54,8 @@ See **View past versions of the repository** at the bottom for more about the Gi
     - This one file contains most of the colors that appear on the site.
     - Keep in mind that many of the colors appear several times in this file, so to tweak that color you must edit `main.css` in multiple locations.
 - The CSS that applies to pages is inside the [`css/page-specific.css`](css/page-specific.css) file.
-  - For instance, all the styles of the big horizontal colored bars on the Home page exists in this file.
-  - You may add things to this file if you want CSS that's specific to your page
+  - For instance, all the styles of the big horizontal colored bars on the Home page exist in this file.
+  - You may add things to this file if you want CSS that's specific to your page.
   - For organization, please name your CSS classes beginning with the page name.  For instance, for the map to PED on the schedule page, the CSS class is `.schedule-map`, not just `.map`.  This will guarantee that the CSS classes only apply to the page you're working on.
 
 ## Change a page's title that appears in the navigation bar
@@ -81,13 +81,14 @@ See **View past versions of the repository** at the bottom for more about the Gi
 - Follow the **Edit page HTML** instructions, but instead of a specific page, open the file [`_data/page_order.yaml`](_data/page_order.yaml).
 - Make sure to follow the format already there.
   - Within a line, everything after a hashtag is a "comment" and is ignored by the system.
-  - Each page in the list must have a hyphen at the beginning, then a space, then the name of the HTML file of that page (within the `_pages` folder).
+  - Each page in the list must have a hyphen at the beginning, then a space, then the name of the HTML file of that page (within the `_pages` folder), without the `.html`.
+
 
 ## Add a page to the site
 1. Navigate to the [`_pages`](_pages) folder.
 1. Click the **Create new file** button, at the top-right.
-1. Give the file a name.  The name should be lowercase with dashes for spaces, and it must end in `.html`.  For instance, if you were to create a Dance Attire page, you would call it `dance-attire.html`.
-1. Important: Add a title to the page, as the very first thing in the new file.  This title will appear in the site navigation bar and on the web browser tab.  It is okay to include spaces and capital letters here.  For instance, for our Dance Attire example, you would type the following:
+1. Give the file a name.  The name should be lowercase with dashes for spaces, and it must end in `.html`.  For instance, if you were to create a Dance Attire page, you would call it `dance-attire.html`.  Note that this name (without the .html) will be in the URL of the page.
+1. Important: Add a title to the page, at the very top of the new file (in the section marked by `---` above and below).  This title will appear in the site navigation bar and on the web browser tab.  It is okay to include spaces and capital letters here.  For instance, for our Dance Attire example, you would type the following:
   ```
   ---
   title: Dance Attire
@@ -115,7 +116,7 @@ See **View past versions of the repository** at the bottom for more about the Gi
     </ul>
   </div>
   ```
-1. IMPORTANT: Add the page to [`_data/page_order.yaml`](_data/page_order.yaml).  Otherwise, it will not be included in the site navigation bar.  Follow the instructions in the **Edit the page order on the navigation bar** section.
+1. IMPORTANT: Add the page to [`_data/page_order.yaml`](_data/page_order.yaml).  Otherwise, it will not be included in the site navigation bar.  Follow the instructions in the **Edit the page order on the navigation bar** section; for the Dance Attire example, we would add a line to `_data/page_order.yaml` that looks like: `- dance-attire`.
 1. Wait up to 10 minutes or so for the public website to update.
 
 ## Add images to the header slideshow
