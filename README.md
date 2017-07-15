@@ -5,13 +5,11 @@ You can do all basic editing on github.com, from any computer.  You must be logg
 
 Please note that all the code in this repository is public &mdash; even if something is invisible to people on uscballroom.org, people will be able to view it in this repository.  So, do not put any important data such as passwords in the repository.
 
+*These instructions assume you have at least basic experience with HTML, and that you will edit the site through github.com in your web browser.  Also note that you can make changes from your computer using `git` in a terminal and a text editor, just like any other GitHub repository.  This is highly recommended if you are making large functional/structural/style changes to the site.  However, the instructions below do not say anything about how to do this; you should acquire HTML, CSS, basic JavaScript, Git, and Jekyll skills on your own before attempting significant edits.*
+
 See **View past versions of the repository** at the bottom for more about the GitHub system.
 
-*Also note that changes can be made from your computer using `git` on a terminal/command prompt, and a text editor &mdash; just like any other GitHub repository.  This is highly recommended if you are making large functional/structural/style changes to the site.  The instructions below do not say anything about how to do this; you should acquire web development (mostly HTML and CSS; also JavaScript for complex things) & Git skills on your own before attempting this.*
-
 # How to edit various parts of the site:
-
-This guide does not teach you about HTML.  You should have at least basic HTML knowledge if you want to edit the site.  If you want to make large structural or style changes, you'll need experience with CSS, JavaScript, Git, and basic Jekyll knowledge.
 
 ## Update the class days and times
 - You will have to update the class days, times, and locations at least every semester.
