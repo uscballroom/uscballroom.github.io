@@ -26,24 +26,24 @@ See **View past versions of the repository** at the bottom for more about the Gi
 1. Click the pencil icon at the top-right to edit the file.
 1. Make your edits. *Note: unfortunately, the **Preview changes** button on the edit page won't work for our HTML files.*
   - The HTML code you write is normal HTML, with just one caveat.  If you ever need to specify a URL of something within this website (most commonly, for links to other pages in the site), you must precede the URL with `{{site.github.url}}`.  For example, using an imaginary "Dance Attire" page:
-  ```
-  THE NORMAL WAY: DON'T DO THIS
-  <a href="/dance-attire">Learn about official competition attire</a>
+    ```
+    THE NORMAL WAY: DON'T DO THIS
+    <a href="/dance-attire">Learn about official competition attire</a>
 
-  OUR WAY: YOU NEED TO DO THIS
-  <a href="{{site.github.url}}/dance-attire">Learn about official competition attire</a>
-  ```
-  This is also true for other URLs that appear, such as image sources:
-  ```
-  <img class="SchedulePage_map" src="{{site.github.url}}/images/map_to_ped.png"/>
-  ```
-  Note that you definitely cannot do this for links that go out of the site.  However, I recommend that links that go out of the site should have `target="_blank"` on them, which makes them open in a new tab.  For example, this is on the Contact Us page:
-  ```
-  Find us on <a href="https://www.facebook.com/USCBallroom/" target="_blank">Facebook</a> for updates
-  ```
-  You can look at the Join, Schedule, and Contact Us pages to see these examples in action.
-  - If you encounter any blocks that look like `{{ ... }}` or `{% ... %}`, be very careful around them and generally don't edit anything between the brackets.  These blocks are for 
-
+    OUR WAY: YOU NEED TO DO THIS
+    <a href="{{site.github.url}}/dance-attire">Learn about official competition attire</a>
+    ```
+    This is also true for other URLs that appear, such as image sources:
+    ```
+    <img class="SchedulePage_map" src="{{site.github.url}}/images/map_to_ped.png"/>
+    ```
+    Note that you definitely cannot do this for links that go out of the site.  However, I recommend that links that go out of the site should have `target="_blank"` on them, which makes them open in a new tab.  For example, this is on the Contact Us page:
+    ```
+    Find us on <a href="https://www.facebook.com/USCBallroom/" target="_blank">Facebook</a> for updates
+    ```
+    You can look at the Join, Schedule, and Contact Us pages to see these examples in action.
+  - If you encounter any blocks that look like `{{ ... }}` or `{% ... %}`, be very careful around them and generally don't edit anything between the brackets.  These blocks are for smartly generating content like lists of things.
+  - To edit the people on the Leaders page, follow the instructions at the top of the [`_pages/leaders.html`](_pages/leaders.html) file.  Upload the photo of each leader to the [`images/leaders`](images/leaders) folder.  Note that you have to crop it to the square shape that will appear on the Leaders page.
 1. If you want, you can type a summary of your changes in the box right under the heading "Commit changes". This is useful for viewing the editing history of the site, but you don't have to do it.
 1. To save the changes, click the button at the bottom that says **Commit changes**.
 1. Wait up to 10 minutes or so for the public website to update.
