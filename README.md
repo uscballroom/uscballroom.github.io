@@ -89,33 +89,33 @@ See **View past versions of the repository** at the bottom for more about the Gi
 1. Click the **Create new file** button, at the top-right.
 1. Give the file a name.  The name should be lowercase with dashes for spaces, and it must end in `.html`.  For instance, if you were to create a Dance Attire page, you would call it `dance-attire.html`.  Note that this name (without the .html) will be in the URL of the page.
 1. Important: Add a title to the page, at the very top of the new file (in the section marked by `---` above and below).  This title will appear in the site navigation bar and on the web browser tab.  It is okay to include spaces and capital letters here.  For instance, for our Dance Attire example, you would type the following:
-  ```
-  ---
-  title: Dance Attire
-  ---
-  ```
+    ```
+    ---
+    title: Dance Attire
+    ---
+    ```
 1. Add the content.  Most pages will have a `<div class="page-container">` surrounding them.  I suggest copying and pasting from the Join page to get the general structure, because the Join page doesn't have any fancy custom stuff (don't copy from the Home page, because it's very different from the other pages).  For example, our final Dance Attire file might look like:
-  ```
-  ---
-  title: Dance Attire
-  ---
-  <div class="page-container">
-    <h1>Appropriate Dance Attire</h1>
-    <p>At competitions, you want to look your sharpest!  Here's the dance attire guidelines for competitions!</p>
-    <p>Check out our <a href="{{site.github.url}}/schedule">leaders page</a> to see some sharp-looking dancers!</p>
-    <h3>Traditional Women's dance attire</h3>
-    <p>Most women wear a dress, makeup, and styled hair for dancing if they are following.  Our board members can help you style your hair on the day of the competition.</p>
-    <p>When leading, some women have a similar outfit to when they're following, and some wear attire that's more similar to traditional men's attire, such as black pants and some sort of shirt.</p>
-    <h3>Traditional Men's dance attire</h3>
-    <ul>
-      <li>Slicked back hair</li>
-      <li>Black pants</li>
-      <li>Long-sleeve, button-down shirt</li>
-      <li>Tie or bowtie</li>
-      <li>Vest, if you have it</li>
-    </ul>
-  </div>
-  ```
+    ```
+    ---
+    title: Dance Attire
+    ---
+    <div class="page-container">
+      <h1>Appropriate Dance Attire</h1>
+      <p>At competitions, you want to look your sharpest!  Here's the dance attire guidelines for competitions!</p>
+      <p>Check out our <a href="{{site.github.url}}/schedule">leaders page</a> to see some sharp-looking dancers!</p>
+      <h3>Traditional Women's dance attire</h3>
+      <p>Most women wear a dress, makeup, and styled hair for dancing if they are following.  Our board members can help you style your hair on the day of the competition.</p>
+      <p>When leading, some women have a similar outfit to when they're following, and some wear attire that's more similar to traditional men's attire, such as black pants and some sort of shirt.</p>
+      <h3>Traditional Men's dance attire</h3>
+      <ul>
+        <li>Slicked back hair</li>
+        <li>Black pants</li>
+        <li>Long-sleeve, button-down shirt</li>
+        <li>Tie or bowtie</li>
+        <li>Vest, if you have it</li>
+      </ul>
+    </div>
+    ```
 1. IMPORTANT: Add the page to [`_data/page_order.yaml`](_data/page_order.yaml).  Otherwise, it will not be included in the site navigation bar.  Follow the instructions in the **Edit the page order on the navigation bar** section; for the Dance Attire example, we would add a line to `_data/page_order.yaml` that looks like: `- dance-attire`.
 1. Wait up to 10 minutes or so for the public website to update.
 
