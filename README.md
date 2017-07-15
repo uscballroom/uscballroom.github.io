@@ -122,7 +122,7 @@ See **View past versions of the repository** at the bottom for more about the Gi
 ## Add images to the header slideshow
 1. Navigate to this repository's [`images/backgrounds`](images/backgrounds) folder, in github.com.
 1. Click the **Upload files** button, near the top-right.
-1. Select the photo or photos on your computer you wish to add to the slideshow.
+1. Select and upload the photo or photos on your computer you wish to add to the slideshow.
 1. Wait up to 10 minutes or so for the public website to update.
 
 # How to do certain GitHub stuff:
@@ -139,5 +139,5 @@ Note: whoever you add must have a GitHub account (free), and as a collaborator t
 Every edit you make is reversible, since this is a system using Git.  On GitHub, you edit files, then when you save them, the system makes a Git commit.  A commit is like a snapshot of the entire repository at the time you made the commit, and you can view that snapshot later, even after making other changes.
 1. When viewing a file (not editing), click the **History** button at the top-right to see a list of various commits that changed that file in the past.
 1. Click on a **<>** button to browse the repository's code at that point in the past.  You can navigate through the files as you do normally.
-  - Be careful, because when you view the code in the past, the GitHub site looks pretty much exactly the same as it does when you're viewing the up-to-date code.
-1. When you're done viewing the past code, click on the repository name at the top, i.e. **uscballroom.github.io**, to get back to the normal view of the most up-to-date code.
+    - Be careful, because when you view the code in the past, GitHub looks pretty much exactly the same as it does when you're viewing the up-to-date code.  Be careful of mixing up whether you're looking at old or up-to-date code.
+1. When you're done viewing the past code, you can click on the repository name at the top (i.e. **uscballroom.github.io**) to get back to the normal view of the most up-to-date code.
