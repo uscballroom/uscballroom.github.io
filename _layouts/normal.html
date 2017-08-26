@@ -91,7 +91,7 @@
             <div class="Navigation">
               <!-- Don't touch the following line; instead edit _data/page_order.yaml -->
               <div class="Navigation_pages">{% for page_id in site.data.page_order %}{% assign page_url = page_id | prepend:"/" | append:"/" %}{% assign p = site.pages | where:"url", page_url | first %}<a class="{% if p.url == page.url %}Navigation_currentPage{% endif %}" href="{{p.url}}">{{p.title}}</a>{% cycle '', '', '', '</div><div class="Navigation_pages">' %}{% endfor %}</div>
-              <div class="Navigation_controls"><span class="Navigation_imagesLabel">images:&nbsp;</span><a id="Navigation_controls_prev"><i class="material-icons">&#xE045;</i></a><a id="Navigation_controls_pause"><i id="Navigation_controls_pause_icon" class="material-icons">&#xE034;</i></a><a id="Navigation_controls_next"><i class="material-icons">&#xE044;</i></a></div>
+              <div class="Navigation_controls"><span class="Navigation_imagesLabel"></span><a id="Navigation_controls_prev"><i class="material-icons">&#xE045;</i></a><a id="Navigation_controls_pause"><i id="Navigation_controls_pause_icon" class="material-icons">&#xE034;</i></a><a id="Navigation_controls_next"><i class="material-icons">&#xE044;</i></a></div>
             </div>
           </div>
         </div>
