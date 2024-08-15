@@ -141,3 +141,18 @@ Every edit you make is reversible, since this is a system using Git.  On GitHub,
 1. Click on a **<>** button to browse the repository's code at that point in the past.  You can navigate through the files as you do normally.
     - Be careful, because when you view the code in the past, GitHub looks pretty much exactly the same as it does when you're viewing the up-to-date code.  Be careful of mixing up whether you're looking at old or up-to-date code.
 1. When you're done viewing the past code, you can click on the repository name at the top (i.e. **uscballroom.github.io**) to get back to the normal view of the most up-to-date code.
+
+# Developing Locally
+
+## Installation (Tested on Ubuntu)
+1. [Install Ruby](https://www.ruby-lang.org/en/documentation/installation/):
+   `sudo apt-get install ruby-full`
+1. [Bundler](https://bundler.io) should be installed with Ruby above. Configure
+   it to use local paths with: `bundle config set --local path 'vendor/bundle'`
+1. Install the site: `bundle install`
+
+## Running the Site
+1. Run `bundle exec jekyll serve --livereload`
+1. The site should now be hosted in your browser at
+   [http://127.0.0.1:4000](http://127.0.0.1:4000) As you make changes to the
+   site, your browser should automatically reload.
