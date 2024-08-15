@@ -1,4 +1,4 @@
-##### This is the code repository for the SC Ballroom Dance Team website [uscballroom.org](www.uscballroom.org).
+##### This is the code repository for the Trojan Ballroom Dance Team website [uscballroom.org](www.uscballroom.org).
 
 # Editing the site
 You can do all basic editing on github.com, from any computer.  You must be logged in to GitHub.com with an account that is a collaborator to this repository.  To add collaborators, see the instructions under the heading below.
